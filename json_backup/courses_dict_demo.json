@@ -1,0 +1,2373 @@
+{
+  "CAES1000": {
+    "name": "CAES1000 Core University English",
+    "to_clean": "Only for Year 1 students in the new cohort to enroll",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1
+    ]
+  },
+  "CAES9542": {
+    "name": "CAES9542 Technical English for Computer Science",
+    "to_clean": "Only for Year 4 students in the new cohort to enroll",
+    "rec_year": 4,
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": [
+          "COMP4801",
+          "COMP4804"
+        ]
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      4
+    ]
+  },
+  "CENG9001": {
+    "name": "CENG9001 Practical Chinese for Engineering Students",
+    "to_clean": "CENG9001 for Year 3 students ONLY.",
+    "rec_year": 3,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      3
+    ]
+  },
+  "CCCH####": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "CCGL####": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "CCST####": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "CCHU####": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "CCXX####": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "MATH1851": {
+    "name": "MATH1851 Calculus and ordinary differential equations",
+    "to_clean": "Level 2 or above in Module 1, or Module 2 of HKDSE Mathematics or equivalent, or\r\nPass in MATH1011 University Mathematics I\r\n(This course is exclusive for Engineering students.)",
+    "rec_year": "",
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [
+          "MATH1011"
+        ],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "Faculty of Engineering",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "MATH1853": {
+    "name": "MATH1853 Linear algebra, probability and statistics",
+    "to_clean": "Level 2 or above in Module 1, or Module 2 of HKDSE Mathematics or equivalent, or\r\nPass in MATH1011 University Mathematics I\r\n(This course is exclusively for Engineering students.)",
+    "rec_year": "",
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [
+          "MATH1011"
+        ],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "Faculty of Engineering",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1111": {
+    "name": "ENGG1111 Computer programming and applications",
+    "to_clean": "Not for students who have passed in ENGG1112, or have already enrolled in this course",
+    "rec_year": 1,
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": ["ENGG1112"],
+        "enrolled": ["ENGG1112"]
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PHYS1050": {
+    "name": "PHYS1050 Physics for engineering students",
+    "to_clean": "Level 3 or above in HKDSE Physics or Combined Science with Physics components or equivalent; and\r\n(Level 2 or above in Module 1, or Module 2 of HKDSE Mathematics or equivalent, or Pass in MATH1011)\r\n(This course is exclusive for Engineering students.)",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["MATH1011"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "Faculty of Engineering",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1202": {
+    "name": "ENGG1202 Introduction to computer science",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG120#": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP2119": {
+    "name": "COMP2119 Introduction to data structures and algorithms",
+    "to_clean": "Pass in CSIS1117 or COMP1117 or ENGG1002 or ENGG1111 or ENGG1112; Pass in CSIS1122 or CSIS1123 or COMP2123, or already enrolled in these courses",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["CSIS1117","COMP1117","ENGG1002","ENGG1111","ENGG1112"],
+        "enrolled": []
+      },
+      {
+        "passed": ["CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": ["CSIS1122","CSIS1123","COMP2123"]
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP2120": {
+    "name": "COMP2120 Computer organization",
+    "to_clean": "Pass in CSIS1117 or COMP1117 or ENGG1002 or ENGG1111 or ENGG1112, or already enrolled in these courses; \r\nMutually exclusive with: ELEC2441",
+    "rec_year": 2,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS1117","COMP1117","ENGG1002","ENGG1111","ENGG1112"],
+        "enrolled": ["CSIS1117","COMP1117","ENGG1002","ENGG1111","ENGG1112"]
+      }
+    ],
+    "exclusive": ["ELEC2441"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP2121": {
+    "name": "COMP2121 Discrete mathematics",
+    "to_clean": "Mutually exclusive with: MATH3600",
+    "rec_year": 2,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["MATH3600"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP2123": {
+    "name": "COMP2123 Programming technologies and tools",
+    "to_clean": "Pass in CSIS1117 or COMP1117 or ENGG1002 or ENGG1111 or ENGG1112; Not for students who have passed in CSIS1122 or have already enrolled in this course",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["CSIS1117","COMP1117","ENGG1002","ENGG1111","ENGG1112"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": ["CSIS1122"],
+        "enrolled": ["CSIS1122"]
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3230": {
+    "name": "COMP3230 Principles of operating systems",
+    "to_clean": "Pass in CSIS1122 or CSIS1123 or COMP2123; and CSIS1120 or COMP2120 or ELEC1401 or ELEC2441",
+    "rec_year": 3,
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": []
+      },
+      {
+        "passed": ["CSIS1120","COMP2120","ELEC1401","ELEC2441"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3234": {
+    "name": "COMP3234 Computer and communication networks",
+    "to_clean": "Pass in CSIS0230 or COMP3230;\r\nMutually exclusive with: ELEC3443",
+    "rec_year": 3,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS0230","COMP3230"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["ELEC3443"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3250": {
+    "name": "COMP3250 Design and analysis of algorithms",
+    "to_clean": "Pass in CSIS1119 or COMP2119 or ELEC1502 or ELEC1503 or ELEC2543",
+    "rec_year": 3,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS1119","COMP2119","ELEC1502","ELEC1503","ELEC2543"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3278": {
+    "name": "COMP3278 Introduction to database management systems",
+    "to_clean": "Pass in CSIS1119 or COMP2119 or ELEC1502 or ELEC1503 or ELEC2543; \r\nMutually exclusive with: BUSI0052 or IIMT3601",
+    "rec_year": 3,
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS1119","COMP2119","ELEC1502","ELEC1503","ELEC2543"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["BUSI0052","IIMT3601"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3297": {
+    "name": "COMP3297 Software engineering",
+    "to_clean": "Pass in CSIS1122 or CSIS1123 or COMP2123",
+    "rec_year": 3,
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3311": {
+    "name": "COMP3311 Legal aspects of computing",
+    "to_clean": "Pass in CSIS1122 or CSIS1123 or COMP2123",
+    "rec_year": 3,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP4801": {
+    "name": "COMP4801 Final year project",
+    "to_clean": "No pre-requisite",
+    "rec_year": 4,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      4
+    ]
+  },
+  "COMP3412": {
+    "name": "COMP3412 Internship",
+    "to_clean": "No pre-requisite",
+    "rec_year": 3,
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC1001": {
+    "name": "PSYC1001 Introduction to psychology",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2101": {
+    "name": "PSYC2101 Foundations of neuroscience",
+    "to_clean": "Pass the prerequisite PSYC1001.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC1001"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2102": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC3054": {
+    "name": "PSYC3054 Human neuropsychology",
+    "to_clean": "Pass the prerequisites either PSYC2101 or PSYC2022.",
+    "rec_year": 3,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC2101", "PSYC2022"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2110": {
+    "name": "PSYC2110 Developmental neuroscience",
+    "to_clean": "No pre-requisite",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2111": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2112": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC4101": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "BBMS3011": {
+    "name": "BBMS3011 Molecular Neuroscience",
+    "to_clean": "Pass in any one of these courses: BBMS1001 Human Biology, BIOC2600 Basic Biochemistry, BIOL2220 Principles of Biochemistry, MEDE2302 Life Sciences II (Cell Biology & Physiology), PSYC2022 Biological Psychology",
+    "rec_year": 3,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["BBMS1001", "BIOC2600", "BIOL2220", "MEDE2302", "PSYC2022"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "BIOL3105": {
+    "name": "BIOL3105 Animal physiology and environmental adaptation",
+    "to_clean": "Pass in BIOL2103 or BIOL2220 or BIOC2600",
+    "rec_year": 3,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["BIOL2103", "BIOL2220", "BIOC2600"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "BBMS2003": {
+    "name": "BBMS2003 Human Genetics",
+    "to_clean": "Pass in BBMS1001 or BIOC1600",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["BBMS1001", "BIOC1600"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "MEDE3501": {
+    "name": "MEDE3501 Medical imaging",
+    "to_clean": "Pass in MEDE2500 or ELEC3241",
+    "rec_year": 3,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["MEDE2500", "ELEC3241"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2007": {
+    "name": "PSYC2007 Cognitive psychology",
+    "to_clean": "Pass the prerequisites PSYC1001 and PSYC1004.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC1001"],
+        "enrolled": []
+      },
+      {
+        "passed": ["PSYC1004"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2051": {
+    "name": "PSYC2051 Perception",
+    "to_clean": "Pass the prerequisite PSYC1001.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC1001"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP1117": {
+    "name": "COMP1117 Computer programming",
+    "to_clean": "Not for students who have passed in ENGG1111 or ENGG1112, or have already enrolled in these courses",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [{
+      "passed": ["ENGG1111", "ENGG1112"],
+      "enrolled": ["ENGG1111", "ENGG1112"]
+    }],
+    "faculty": "",
+    "year": [
+      1
+    ]
+  },
+  "LING1000": {
+    "name": "LING1000 Introduction to language",
+    "to_clean": "This course is offered to year 1 students only.",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1
+    ]
+  },
+  "LING2034": {
+    "name": "LING2034 Psycholinguistics",
+    "to_clean": "(a) pass in LING1000; and (b) offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["LING1000"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "PHIL1012": {
+    "name": "PHIL1012 Mind and knowledge: an introduction to philosophy",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2066": {
+    "name": "PSYC2066 Foundations of cognitive science",
+    "to_clean": "Pass the prerequisite COMP1117 or CSIS1117 or LING1000 or LING1001 or PHIL1002 or PHIL1012 or PSYC1001.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["COMP1117", "CSIS1117", "LING1000", "LING1001", "PHIL1002", "PHIL1012", "PSYC1001"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2067": {
+    "name": "PSYC2067 Seminars in cognitive science",
+    "to_clean": "Pass the prerequisite PSYC2066 or PSYC0066.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC2066", "PSYC0066"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PHIL2110": {
+    "name": "PHIL2110 Knowledge",
+    "to_clean": "This course is offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "PHIL2220": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PHIL2230": {
+    "name": "PHIL2230 Philosophy and cognitive science",
+    "to_clean": "This course is offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "PHIL2510": {
+    "name": "PHIL2510 Logic",
+    "to_clean": "(a) not for students who have taken PHIL1068 before; and (b) offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [{
+      "passed": ["PHIL1068"],
+      "enrolled": ["PHIL1068"]
+    }],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "PHIL2520": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3314": {
+    "name": "COMP3314 Machine learning",
+    "to_clean": "Pass in MATH1853 or ENGG1003 or ENGG1004; and CSIS1119 or COMP2119 or ELEC1502 or ELEC1503 or ELEC2543",
+    "rec_year": 3,
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["MATH1853", "ENGG1003", "ENGG1004"],
+        "enrolled": []
+      },
+      {
+        "passed": ["CSIS1119", "COMP2119", "ELEC1502", "ELEC1503", "ELEC2543"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3407": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC3061": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2053": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2057": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2022": {
+    "name": "PSYC2022 Biological psychology",
+    "to_clean": "Pass the prerequisite PSYC1001.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC1001"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC2032": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC3068": {
+    "name": "PSYC3068 Advanced cognitive psychology",
+    "to_clean": "Pass the prerequisites PSYC1004 and one of the following courses: PSYC2007, PSYC2051",
+    "rec_year": 3,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC1004"],
+        "enrolled": []
+      },
+      {
+        "passed": ["PSYC2007", "PSYC2051"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2003": {
+    "name": "LING2003 Semantics: Meaning and grammar",
+    "to_clean": "(a) pass in LING1000; and (b) offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["LING1000"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2032": {
+    "name": "LING2032 Syntactic theory",
+    "to_clean": "(a) pass in LING1000 and LING2050; (b) offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["LING1000", "LING2050"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2037": {
+    "name": "LING2037 Bilingualism",
+    "to_clean": "(a) pass in LING1000; (b) not for students who have taken PSYC0038 before; and (c) offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["LING1000"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [{
+      "passed": ["PSYC0038"],
+      "enrolled": ["PSYC0038"]
+    }],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2048": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2055": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2063": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PHIL2075": {
+    "name": "PHIL2075 The semantics/pragmatics distinction",
+    "to_clean": "This course is offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC3061": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2053": {
+    "name": "",
+    "to_clean": "",
+    "rec_year": "",
+    "semester": "",
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "PSYC3068": {
+    "name": "PSYC3068 Advanced cognitive psychology",
+    "to_clean": "Pass the prerequisites PSYC1004 and one of the following courses: PSYC2007, PSYC2051",
+    "rec_year": 3,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["PSYC1004"],
+        "enrolled": []
+      },
+      {
+        "passed": ["PSYC2007","PSYC2051"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "LING2003": {
+    "name": "LING2003 Semantics: Meaning and grammar",
+    "to_clean": "(a) pass in LING1000; and (b) offered to year 2 or above students.",
+    "rec_year": 2,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["LING1000"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1201": {
+    "name": "ENGG1201 Engineering for sustainable development",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1203": {
+    "name": "ENGG1203 Introduction to electrical and electronic engineering",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1204": {
+    "name": "ENGG1204 Industrial Management and logistics",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1205": {
+    "name": "ENGG1205 Introduction to mechanical engineering",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1206": {
+    "name": "ENGG1206 Introduction to biomedical engineering",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ENGG1207": {
+    "name": "ENGG1207 Foundations of biochemistry for medical engineering",
+    "to_clean": "No pre-requisite",
+    "rec_year": 1,
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP2396": {
+    "name": "COMP2396 Object-oriented programming and Java",
+    "to_clean": "Pass in CSIS1117 or COMP1117 or ENGG1002 or ENGG1111 or ENGG1112;\r\nMutually exclusive with: ELEC2543",
+    "rec_year": 2,
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS1117", "COMP1117", "ENGG1002", "ENGG1111", "ENGG1112"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["ELEC2543"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3258": {
+    "name": "COMP3258 Functional programming",
+    "to_clean": "Pass in CSIS1118 or CSIS1121 or COMP2121 or ENGG1007",
+    "rec_year": 3,
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS1118", "CSIS1121", "COMP2121", "ENGG1007"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3259": {
+    "name": "COMP3259 Principles of programming languages",
+    "to_clean": "Pass in CSIS1119 or COMP2119",
+    "rec_year": 3,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS1119", "COMP2119"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3270": {
+    "name": "COMP3270 Artificial intelligenece",
+    "to_clean": "Pass in CSIS1119 or COMP2119 or CSIS1122 or CSIS1123 or COMP2123; \r\nMutually exclusive with: BUSI0088 or IIMT3688",
+    "rec_year": "",
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS1119","COMP2119","CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["BUSI0088","IIMT3688"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3271": {
+    "name": "COMP3271 Computer graphics",
+    "to_clean": "Pass in CSIS1119 or or COMP2119 or CSIS1122 or CSIS1123 or COMP2123",
+    "rec_year": "",
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS1119","COMP2119","CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3317": {
+    "name": "COMP3317 Computer vision",
+    "to_clean": "Pass in CSIS1119 or COMP2119 or CSIS1122 or CSIS1123 or COMP2123",
+    "rec_year": "",
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS1119","COMP2119","CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3320": {
+    "name": "COMP3320 Electronic commerce technology",
+    "to_clean": "Pass in CSIS0278 or COMP3278",
+    "rec_year": "",
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS0278","COMP3278"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3322": {
+    "name": "COMP3322 Modern Technologies on World Wide Web",
+    "to_clean": "Pass in CSIS1117 or COMP1117 or ENGG1002 or ENGG1111 or ENGG1112; \r\nMutually exclusive with: BUSI0063 or IIMT3663",
+    "rec_year": "",
+    "semester": 4,
+    "criteria": [
+      {
+        "passed": ["CSIS1117","COMP1117","ENGG1002","ENGG1111","ENGG1112"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["BUSI0063","IIMT3663"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3323": {
+    "name": "COMP3323 Advanced database systems",
+    "to_clean": "Pass in CSIS0278 or COMP3278",
+    "rec_year": "",
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS0278","COMP3278"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3327": {
+    "name": "COMP3327 Computer and network security",
+    "to_clean": "Pass in CSIS0230 or COMP3230; and CSIS0234 or COMP3234;\r\nMutually exclusive with: ELEC4641",
+    "rec_year": "",
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS0230","COMP3230"],
+        "enrolled": []
+      },
+      {
+        "passed": ["CSIS0234","COMP3234"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["ELEC4641"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3329": {
+    "name": "COMP3329 Computer game design and programming",
+    "to_clean": "Pass in CSIS1122 or CSIS1123 or COMP2123",
+    "rec_year": "",
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS1122","CSIS1123","COMP2123"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3330": {
+    "name": "COMP3330 Interactive Mobile Application Design and Programming",
+    "to_clean": "Not for students who have passed in CSIS0247, or have already enrolled in this course; Pass in CSIS0396 or COMP2396",
+    "rec_year": "",
+    "semester": 1,
+    "criteria": [
+      {
+        "passed": ["CSIS0396","COMP2396"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": ["CSIS0247"],
+        "enrolled": ["CSIS0247"]
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3352": {
+    "name": "COMP3352 Algorithmic Game Theory",
+    "to_clean": "MATH1853 or MATH2101; and COMP2119",
+    "rec_year": 3,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["MATH1853","MATH2101"],
+        "enrolled": []
+      },{
+        "passed": ["COMP2119"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3402": {
+    "name": "COMP3402 System architecture and distributed computing",
+    "to_clean": "Pass in CSIS0396 or COMP2396;\r\nMutually exclusive with: ELEC3643",
+    "rec_year": 3,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS0396","COMP2396"],
+        "enrolled": []
+      }
+    ],
+    "exclusive": ["ELEC3643"],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "COMP3403": {
+    "name": "COMP3403 Implementation, testing and maintenance of software systems",
+    "to_clean": "Pass in CSIS0396 or COMP2396, or already enrolled in these courses",
+    "rec_year": 3,
+    "semester": 2,
+    "criteria": [
+      {
+        "passed": ["CSIS0396","COMP2396"],
+        "enrolled": ["CSIS0396","COMP2396"]
+      }
+    ],
+    "exclusive": [],
+    "ineligible": [
+      {
+        "passed": [],
+        "enrolled": []
+      }
+    ],
+    "faculty": "",
+    "year": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+} 

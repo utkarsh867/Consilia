@@ -1,0 +1,2 @@
+mongoimport --db consilia --collection courses --type json --file courses_demo.json --jsonArray
+mongoimport --db consilia --collection curriculum --type json --file curriculum_demo.json --jsonArray
