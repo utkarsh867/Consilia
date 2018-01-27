@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="consilia">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/mystyles.css">
+    <title>Consilia</title>
+</head>
+<body ng-controller="mainCtrlr">
+<div id="coursePlan" class="course-plan">
+    <div id="courses">
+        <div id="year">
+            <select ng-init="year = 'year-1'"  ng-model="year">
+                <option value="year-1">Year 1</option>
+                <option value="year-2">Year 2</option>
+                <option value="year-3">Year 3</option>
+                <option value="year-4">Year 4</option>
+            </select>
+        </div>
+        <div id="semester1">
+            <h4>Semester 1</h4>
+            <label ng-repeat='course in courseList[year]["sem1"]'>
+                <input type="checkbox" checklist-model="selected.courses" checklist-value="course" /> {{course}}<br/>
+            </label>
+        </div>
+        <div id="semester2">
+            <h4>Semester 2</h4>
+            <label ng-repeat='course in courseList[year]["sem1"]'>
+                <input type="checkbox" checklist-model="selected.courses" checklist-value="course" /> {{course}}<br/>
+            </label>
+        </div>
+    </div>
+    <div id="curriculum">
+        <div id="major">
+        </div>
+        <div id="minor">
+        </div>
+    </div>
+</div>
+<script src="/javascripts/myscripts.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/checklist-model/0.11.0/checklist-model.js"></script>
+</body>
+</html>

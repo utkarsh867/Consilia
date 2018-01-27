@@ -1,0 +1,32 @@
+div {
+    border: 1px solid black;
+}
+
+#courses{
+    position: absolute; left: 0; top: 0; width: 50%;
+}
+
+#curriculum{
+    position: absolute; right: 0; top: 0; width: 50%;
+}
+
+#year {
+    height: 50px;
+    margin: auto;
+}
+
+#semester1{
+    height:200px;
+}
+
+#semester2{
+    height:200px;
+}
+
+#major{
+    height:200px;
+}
+
+#minor{
+    height:200px;
+}
