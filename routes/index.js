@@ -17,6 +17,7 @@ router.get('/', function(req, res, next) {
                 res.send("Connected to database\n\r");
             }catch (exception){
                 console.log(exception);
+                res.send("Connected to database\n\r");
             }
         }
     });
