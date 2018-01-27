@@ -2,40 +2,55 @@ var express = require('express');
 var router = express.Router();
 
 //post event of type
-router.get("/course_suggestion",function(req,res){
+router.post("/course_suggestion",function(req,res){
     var db =req.db;
-    var mockdata_passed={passed:["ENGG1111"],enrolled:["ENGG1111"]}
-    //,enrolled:[]
-
-    var add=true;
-    var query={}
-    var passed=mockdata_passed.passed
-    var final_docs=[]
-    db.get("courses").find({"code":{$ne:{$all:mockdata_passed.passed}}}
-        ,{},function(err,doc){
-            if(err)
-                throw err;
-            for(var i in doc)
-            {
-                for ( var j in doc[i].criteria){
-                    var strings_p=doc[i].criteria[j].passed
-                    var strings_e=doc[i].criteria[j].enrolled
-                    console.log(strings_p,strings_e,eachel(mockdata_passed.passed,strings_p),!strings_e,eachel(mockdata_passed.enrolled,strings_e))
-                    if(eachel(mockdata_passed.passed,strings_p) ||(!strings_e&&eachel(mockdata_passed.enrolled,strings_e)))
+    var selected = req.body.data
+    var passed = []
+    var enrolled = []
+    var course_list = {}
+    var callbacks = 0
+    var total = 0
+    Object.keys(selected).forEach(function(year){
+        Object.keys(selected[year]).forEach(function(sem){
+            var enrolled = selected[year][sem]
+            var add=true;
+            var final_docs=[]
+            total += 1
+            callbacks += 1
+            db.get("courses").find({"code":{$ne:{$all:passed}}},{"code":1,"name":1},function(err,doc){
+                    if(err)
+                        throw err;
+                    for(var i in doc)
                     {
-                        add=true;}
-                    else {
-                        add = false;
-                        break;
+                        for ( var j in doc[i].criteria){
+                            var strings_p=doc[i].criteria[j].passed
+                            var strings_e=doc[i].criteria[j].enrolled
+                            if(eachel(passed,strings_p) ||(!strings_e&&eachel(enrolled,strings_e)))
+                            {
+                                add=true;}
+                            else {
+                                add = false;
+                                break;
+                            }
+
+                        }
+                        if(add)
+                        {final_docs.push(doc[i]);}
                     }
-
-                }
-                if(add)
-                    final_docs.push(doc[i]);
-            }
-            res.send(final_docs);
-        })
-
+                    if (year in course_list){
+                        course_list[year][sem] = final_docs;
+                    } else {
+                        course_list[year] = {};
+                        course_list[year][sem] = final_docs;
+                    }
+                    callbacks -= 1;
+                    if (total == 8 && callbacks == 0){
+                        res.send(course_list);
+                    }
+            })
+            passed.concat(enrolled)
+        });
+    });
 })
 router.get("/course_period",function (req,res){
     var db=req.db;
