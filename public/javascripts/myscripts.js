@@ -19,15 +19,41 @@ consilia.controller('mainCtrlr',function($scope,$http){
         }
     };
 
+    $scope.courses_selected = []
+
     $scope.courseList = {}
 
     $http.post('/courses/course_suggestion',{"data":$scope.selected})
         .then(function(success){
                 $scope.courseList = success.data;
-                console.log(success.data);
         },function(error){
             console.log('Error: ' + err);
         });
+
+    $http.post('/minor/possibleMinor',{"data":$scope.selected})
+        .then(function(success){
+            $scope.possibleMinors = success.data;
+            console.log(success.data);
+        },function(error){
+            console.log('Error: ' + err);
+        });
+
+    $scope.updateList = function(){
+        $http.post('/courses/course_suggestion',{"data":$scope.selected})
+            .then(function(success){
+                $scope.courseList = success.data;
+            },function(error){
+                console.log('Error: ' + err);
+            });
+
+        $http.post('/minor/possibleMinor',{"data":$scope.selected})
+            .then(function(success){
+                $scope.possibleMinors = success.data;
+                console.log(success.data);
+            },function(error){
+                console.log('Error: ' + err);
+            });
+    }
 
 
 });

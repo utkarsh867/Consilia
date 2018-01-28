@@ -19,13 +19,13 @@
         <div id="semester1">
             <h4>Semester 1</h4>
             <label ng-repeat='course in courseList[year]["sem1"]'>
-                <input type="checkbox" checklist-model="selected.courses" checklist-value="course" /> {{course}}<br/>
+                <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem1'].push(course.code)"/> {{course.name}}<br/>
             </label>
         </div>
         <div id="semester2">
             <h4>Semester 2</h4>
-            <label ng-repeat='course in courseList[year]["sem1"]'>
-                <input type="checkbox" checklist-model="selected.courses" checklist-value="course" /> {{course}}<br/>
+            <label ng-repeat='course in courseList[year]["sem2"]'>
+                <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem2'].push(course.code)"/> {{course.name}}<br/>
             </label>
         </div>
     </div>
@@ -33,6 +33,7 @@
         <div id="major">
         </div>
         <div id="minor">
+            <p ng-repeat="minor in possibleMinors">{{minor}}</p>
         </div>
     </div>
 </div>
