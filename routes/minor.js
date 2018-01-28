@@ -58,7 +58,7 @@ function getMatches(courses, minorC) {
 }
 
 function searchIn(cList, courseCode) {
-    if(cList.has(courseCode)){
+    if(cList.indexOf(courseCode)>=0){
         return true;
     }
     else{
