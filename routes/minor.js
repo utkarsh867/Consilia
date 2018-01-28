@@ -10,11 +10,9 @@ router.post('/possibleMinor', function (req,res) {
     if(selected){
         Object.keys(selected).forEach(function (year) {
             Object.keys(selected[year]).forEach(function (semester) {
-                if(!(year===null || semester===null)) {
-                    courses.push(selected[year][semester]);
-                    if(selected[year][semester]===null){
-                        count++;
-                    }
+                courses.push(selected[year][semester]);
+                if(selected[year][semester].length === 0){
+                    count++;
                 }
             });
         });
@@ -31,22 +29,22 @@ router.post('/possibleMinor', function (req,res) {
             docs.forEach(function (faculty) {
                 minorOptions = Object.assign(faculty.Minor);
             });
-        }
-    });
 
-    Object.keys(minorOptions).forEach(function (minorOption) {
-        var noOfCourses = getMatches(courses, minorOption);
-        if(noOfCourses<=count*2){
-            possibleMinors.push(Object.keys(minorOption));
+            Object.keys(minorOptions).forEach(function (minorOption) {
+                var noOfCourses = getMatches(courses, minorOptions[minorOption]);
+                if(noOfCourses<=count*2){
+                    possibleMinors.push(minorOption);
+                }
+            });
+            res.send(possibleMinors);
         }
     });
-    res.send(possibleMinors);
 });
 
 function getMatches(courses, minorC) {
     var count = 0;
     courses.forEach(function (course) {
-        for(var i = 0; i<minorC[0].length(); i++){
+        for(var i = 0; i<minorC[0].length; i++){
             if(searchIn(minorC[0][i])){
                 count++;
                 minorC[0].splice(i, 1);
