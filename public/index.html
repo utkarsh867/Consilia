@@ -3,41 +3,94 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <link rel="stylesheet" href="stylesheets/mystyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <title>Consilia</title>
 </head>
 <body ng-controller="mainCtrlr">
-<div id="coursePlan" class="course-plan">
-    <div id="courses">
-        <div id="year">
-            <select ng-init="year = 'year-1'"  ng-model="year">
-                <option value="year-1">Year 1</option>
-                <option value="year-2">Year 2</option>
-                <option value="year-3">Year 3</option>
-                <option value="year-4">Year 4</option>
-            </select>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <img src="/img/consilia.png" width="40" height="30" class="d-inline-block align-top" style="padding-right:10px;" alt="">
+    <a class="navbar-brand" href="#">Consilia</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Plan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+    <div id="courses" class="container">
+        <div class="year">
+            <h4 style="display:inline">Year:  </h4>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button ng-click="year = 'year-1'" ng-class="{ 'active' : year == 'year-1' }" type="button" class="btn btn-info">1</button>
+                <button ng-click="year = 'year-2'" ng-class="{ 'active' : year == 'year-2' }" type="button" class="btn btn-info">2</button>
+                <button ng-click="year = 'year-3'" ng-class="{ 'active' : year == 'year-3' }" type="button" class="btn btn-info">3</button>
+                <button ng-click="year = 'year-4'" ng-class="{ 'active' : year == 'year-4' }" type="button" class="btn btn-info">4</button>
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Settings
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="semester1">
-            <h4>Semester 1</h4>
+        <div class="semester jumbotron">
+            <h5><span class="badge badge-success">Semester 1</span></h5>
+            <div class="courseList">
             <label ng-repeat='course in courseList[year]["sem1"]'>
                 <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem1'].push(course.code)"/> {{course.name}}<br/>
             </label>
+            </div>
         </div>
-        <div id="semester2">
-            <h4>Semester 2</h4>
+        <div class="semester jumbotron">
+            <h5><span class="badge badge-success">Semester 2</span></h5>
+            <div class="courseList">
             <label ng-repeat='course in courseList[year]["sem2"]'>
                 <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem2'].push(course.code)"/> {{course.name}}<br/>
             </label>
+            </div>
         </div>
     </div>
-    <div id="curriculum">
+            </div>
+            <div class="col-md-4">
+    <div id="curriculum" class="container">
         <div id="major">
         </div>
         <div id="minor">
             <p ng-repeat="minor in possibleMinors">{{minor}}</p>
         </div>
     </div>
-</div>
+            </div>
+        </div>
+    </div>
 <script src="/javascripts/myscripts.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/checklist-model/0.11.0/checklist-model.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>
