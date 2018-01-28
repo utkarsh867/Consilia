@@ -7,7 +7,7 @@
 
     <title>Consilia</title>
 </head>
-<body ng-controller="mainCtrlr">
+<body  ng-controller="mainCtrlr">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <img src="/img/consilia.png" width="40" height="30" class="d-inline-block align-top" style="padding-right:10px;" alt="">
     <a class="navbar-brand" href="#">Consilia</a>
@@ -37,27 +37,28 @@
 </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8">
-    <div id="courses" class="container">
-        <div class="year">
-            <h4 style="display:inline">Year:  </h4>
-            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                <button ng-click="year = 'year-1'" ng-class="{ 'active' : year == 'year-1' }" type="button" class="btn btn-info">1</button>
-                <button ng-click="year = 'year-2'" ng-class="{ 'active' : year == 'year-2' }" type="button" class="btn btn-info">2</button>
-                <button ng-click="year = 'year-3'" ng-class="{ 'active' : year == 'year-3' }" type="button" class="btn btn-info">3</button>
-                <button ng-click="year = 'year-4'" ng-class="{ 'active' : year == 'year-4' }" type="button" class="btn btn-info">4</button>
+            <div class="year" >
+                <h4 style="display:inline">Year:  </h4>
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button ng-click="year = 'year-1'" ng-class="{ 'active' : year == 'year-1' }" type="button" class="btn btn-info">1</button>
+                    <button ng-click="year = 'year-2'" ng-class="{ 'active' : year == 'year-2' }" type="button" class="btn btn-info">2</button>
+                    <button ng-click="year = 'year-3'" ng-class="{ 'active' : year == 'year-3' }" type="button" class="btn btn-info">3</button>
+                    <button ng-click="year = 'year-4'" ng-class="{ 'active' : year == 'year-4' }" type="button" class="btn btn-info">4</button>
 
-                <div class="btn-group" role="group">
-                    <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Settings
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <a class="dropdown-item" href="#">Dropdown link</a>
-                        <a class="dropdown-item" href="#">Dropdown link</a>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Settings
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-md-8 col-lg-8">
+    <div id="courses" class="container">
+
         <div class="semester jumbotron">
             <h5><span class="badge badge-success">Semester 1</span></h5>
             <div class="courseList">
@@ -76,12 +77,19 @@
         </div>
     </div>
             </div>
-            <div class="col-md-4">
-    <div id="curriculum" class="container">
-        <div id="major">
+            <div class="col-md-10 col-lg-10">
+    <div id="curriculum" style="float:left;" class="container" >
+        <div id="major" class="jumbotron">
+            <h5><span class="badge badge-info">Majors</span></h5>
+            <ul>
+                <li ng-repeat="major in possibleMajors">{{major}}</li>
+            </ul>
         </div>
-        <div id="minor">
-            <p ng-repeat="minor in possibleMinors">{{minor}}</p>
+        <div id="minor" class="jumbotron">
+            <h5><span class="badge badge-info">Minors</span></h5>
+            <ul>
+            <li ng-repeat="minor in possibleMinors">{{minor}}</li>
+            </ul>
         </div>
     </div>
             </div>

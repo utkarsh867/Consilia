@@ -9,15 +9,15 @@
 
 nav, .year{
     margin-bottom: 10px;
+    width:100%;
 }
-
 #year {
     height: 50px;
     margin: auto;
 }
 
 .jumbotron{
-    padding: 1rem 1rem !important;
+    padding: 10px 10px !important;
 }
 
 .semester label {

@@ -38,6 +38,13 @@ consilia.controller('mainCtrlr',function($scope,$http){
         },function(error){
             console.log('Error: ' + err);
         });
+    $http.post('/major/possibleMajor',{"data":$scope.selected})
+        .then(function(success){
+            $scope.possibleMajors = success.data;
+            console.log(success.data);
+        },function(error){
+            console.log('Error: ' + err);
+        });
 
     $scope.updateList = function(){
         $http.post('/courses/course_suggestion',{"data":$scope.selected})
@@ -50,6 +57,13 @@ consilia.controller('mainCtrlr',function($scope,$http){
         $http.post('/minor/possibleMinor',{"data":$scope.selected})
             .then(function(success){
                 $scope.possibleMinors = success.data;
+                console.log(success.data);
+            },function(error){
+                console.log('Error: ' + err);
+            });
+        $http.post('/major/possibleMajor',{"data":$scope.selected})
+            .then(function(success){
+                $scope.possibleMajors = success.data;
                 console.log(success.data);
             },function(error){
                 console.log('Error: ' + err);
