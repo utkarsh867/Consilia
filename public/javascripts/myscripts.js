@@ -1,5 +1,6 @@
 var consilia = angular.module('consilia',["checklist-model"]);
 consilia.controller('mainCtrlr',function($scope,$http){
+    $scope.year = "year-1"
     $scope.selected = {
         "year-1":{
             "sem1":[],
