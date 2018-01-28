@@ -16,6 +16,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var courses= require('./routes/courses');
 var consilia = require('./routes/consilia');
+var minor = require('./routes/minor');
 var app = express();
 
 // view engine setup
@@ -41,6 +42,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/consilia',consilia);
 app.use('/courses',courses);
+app.use('/minor', minor);
 
 
 // catch 404 and forward to error handler
