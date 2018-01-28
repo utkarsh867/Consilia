@@ -16,6 +16,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var courses= require('./routes/courses');
 var consilia = require('./routes/consilia');
+var major = require('./routes/major');
 var minor = require('./routes/minor');
 var app = express();
 
@@ -42,6 +43,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/consilia',consilia);
 app.use('/courses',courses);
+app.use('/major', major)
 app.use('/minor', minor);
 
 
