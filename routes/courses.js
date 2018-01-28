@@ -12,28 +12,28 @@ router.get("/course_suggestion",function(req,res){
     var passed=mockdata_passed.passed
     var final_docs=[]
     db.get("courses").find({"code":{$ne:{$all:mockdata_passed.passed}}}
-        ,{},function(err,doc){
-            if(err)
-                throw err;
-            for(var i in doc)
-            {
-                for ( var j in doc[i].criteria){
-                    var strings_p=doc[i].criteria[j].passed
-                    var strings_e=doc[i].criteria[j].enrolled
-                    console.log(strings_p,strings_e,eachel(mockdata_passed.passed,strings_p),!strings_e,eachel(mockdata_passed.enrolled,strings_e))
-                    if(eachel(mockdata_passed.passed,strings_p) ||(!strings_e&&eachel(mockdata_passed.enrolled,strings_e)))
-                    {
-                        add=true;}
-                    else {
-                        add = false;
-                        break;
-                    }
-
+    ,{},function(err,doc){
+        if(err)
+            throw err;
+        for(var i in doc)
+        {
+            for ( var j in doc[i].criteria){
+                var strings_p=doc[i].criteria[j].passed
+                var strings_e=doc[i].criteria[j].enrolled
+                console.log(strings_p,strings_e,eachel(mockdata_passed.passed,strings_p),!strings_e,eachel(mockdata_passed.enrolled,strings_e))
+                if(eachel(mockdata_passed.passed,strings_p) ||(!strings_e&&eachel(mockdata_passed.enrolled,strings_e)))
+                {
+                    add=true;}
+                else {
+                    add = false;
+                    break;
                 }
-                if(add)
-                    final_docs.push(doc[i]);
+
             }
-            res.send(final_docs);
+            if(add)
+                final_docs.push(doc[i]);
+        }
+        res.send(final_docs);
         })
 
 })
