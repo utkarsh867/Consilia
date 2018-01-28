@@ -65,7 +65,7 @@ router.post("/course_suggestion",function(req,res){
 function eachel(set,subset) {
     var h = true;
     for (var i in subset) {
-        h=false;
+        h = false;
         for (var j in set) {
             if (set[j] === subset[i]) {
                 return true;
