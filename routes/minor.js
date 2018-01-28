@@ -10,7 +10,9 @@ router.post('/possibleMinor', function (req,res) {
     if(selected){
         Object.keys(selected).forEach(function (year) {
             Object.keys(selected[year]).forEach(function (semester) {
-                courses.push(selected[year][semester]);
+                selected[year][semester].forEach(function (object) {
+                    courses.push(object);
+                });
                 if(selected[year][semester].length === 0){
                     count++;
                 }
@@ -32,7 +34,9 @@ router.post('/possibleMinor', function (req,res) {
 
             Object.keys(minorOptions).forEach(function (minorOption) {
                 var noOfCourses = getMatches(courses, minorOptions[minorOption]);
-                if(noOfCourses<=count*2){
+                var remCourses = minorOptions[minorOption].length - noOfCourses;
+                var remSemesters = count;
+                if(remCourses<remSemesters*1.5){
                     possibleMinors.push(minorOption);
                 }
             });
@@ -44,10 +48,10 @@ router.post('/possibleMinor', function (req,res) {
 function getMatches(courses, minorC) {
     var count = 0;
     courses.forEach(function (course) {
-        for(var i = 0; i<minorC[0].length; i++){
-            if(searchIn(minorC[0][i])){
+        for(var i = 0; i<minorC.length; i++){
+            if(searchIn(minorC[i], course)){
                 count++;
-                minorC[0].splice(i, 1);
+                minorC.splice(i, 1);
                 break;
             }
         }
