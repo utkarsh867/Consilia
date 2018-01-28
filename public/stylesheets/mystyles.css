@@ -17,10 +17,12 @@ div {
 
 #semester1{
     height:200px;
+    overflow:scroll;
 }
 
 #semester2{
     height:200px;
+    overflow:scroll;
 }
 
 #major{
