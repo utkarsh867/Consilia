@@ -9,8 +9,10 @@ router.post("/course_suggestion",function(req,res){
     var course_list = {};
     var callbacks = 0;
     var total = 0;
+    var advanced_standing = selected['AS']
+    var temp_passed = selected['AS']
+    delete selected['AS']
 
-    var temp_passed = []
     for (var year in selected){
         passed[year] = {}
         for (var sem in selected[year]){
@@ -18,8 +20,17 @@ router.post("/course_suggestion",function(req,res){
             temp_passed = temp_passed.concat(selected[year][sem])
         }
     }
+
+    var all_selected = passed['year-4']['sem2'].concat(selected['year-2']['sem2'])
+
     Object.keys(selected).forEach(function(year){
         Object.keys(selected[year]).forEach(function(sem){
+            var semester;
+            if (sem === 'sem1'){
+                semester = 1;
+            } else {
+                semester = 2;
+            }
             var add=true;
             var final_docs=[];
             total += 1;
@@ -40,7 +51,7 @@ router.post("/course_suggestion",function(req,res){
                                 }
                             }
                             if (add) {
-                                if (doc[i]["code"].indexOf("X") === -1 && doc[i]["code"].indexOf("#") === -1 && !(passed[year][sem].indexOf(doc[i]["code"]) > -1)) {
+                                if (doc[i]["code"].indexOf("X") === -1 && doc[i]["code"].indexOf("#") === -1 && (arr_diff(all_selected,selected[year][sem]).indexOf(doc[i]["code"]) === -1) && (advanced_standing.indexOf(doc[i]["code"]) === -1) && (doc[i]["semester"] == semester || doc[i]["semester"] == 4)) {
                                     final_docs.push({
                                         "code": doc[i]["code"],
                                         "name": doc[i]["name"] === "" ? doc[i]["code"] : doc[i]["name"]
@@ -82,6 +93,29 @@ function isSubsetOf(set, subset) {
         }
     }
     return true;
+}
+
+function arr_diff (a1, a2) {
+
+    var a = [], diff = [];
+
+    for (var i = 0; i < a1.length; i++) {
+        a[a1[i]] = true;
+    }
+
+    for (var i = 0; i < a2.length; i++) {
+        if (a[a2[i]]) {
+            delete a[a2[i]];
+        } else {
+            a[a2[i]] = true;
+        }
+    }
+
+    for (var k in a) {
+        diff.push(k);
+    }
+
+    return diff;
 }
 
 module.exports = router;

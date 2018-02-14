@@ -2,6 +2,7 @@ var consilia = angular.module('consilia',["checklist-model"]);
 consilia.controller('mainCtrlr',function($scope,$http){
     $scope.year = "year-1"
     $scope.selected = {
+        "AS":['CAES1000','CENG9001','PHYS1050','MATH1011'],
         "year-1":{
             "sem1":[],
             "sem2":[]

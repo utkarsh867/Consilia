@@ -4,6 +4,7 @@ var router = express();
 router.post('/possibleMinor', function (req,res) {
     var db = req.db;
     var selected = req.body.data;
+    delete selected['AS'];
     var courses = [];
     var count = 0;
     //Populate the array

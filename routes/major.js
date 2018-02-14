@@ -4,6 +4,7 @@ var router =  express();
 router.post('/possibleMajor', function (req, res) {
     var db = req.db;
     var selected = req.body.data;
+    delete selected['AS'];
     var courses = [];
     var majors = ["Computer Engineering", "Electrical Engineering", "Electronic Engineering", "Civil Engineering", "Industrial Engineering and Logistics Management", "Mechanical Engineering", "Biomedical Engineering"];
     if(selected){

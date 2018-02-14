@@ -69,41 +69,41 @@
                 </div>
             </div>
             <div class="col-md-8 col-lg-8">
-    <div id="courses" class="container">
+                <div id="courses" class="container">
 
-        <div class="semester jumbotron">
-            <h5><span class="badge badge-success">Semester 1</span></h5>
-            <div class="courseList">
-            <label ng-repeat='course in courseList[year]["sem1"]'>
-                <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem1'].push(course.code)"/> {{course.name}}<br/>
-            </label>
-            </div>
-        </div>
-        <div class="semester jumbotron">
-            <h5><span class="badge badge-success">Semester 2</span></h5>
-            <div class="courseList">
-            <label ng-repeat='course in courseList[year]["sem2"]'>
-                <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem2'].push(course.code)"/> {{course.name}}<br/>
-            </label>
-            </div>
-        </div>
-    </div>
+                    <div class="semester jumbotron">
+                        <h5><span class="badge badge-success">Semester 1</span></h5>
+                        <div class="courseList">
+                        <label ng-repeat='course in courseList[year]["sem1"]'>
+                            <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem1'].includes(course.code) ? selected[year]['sem1'].splice(selected[year]['sem1'].indexOf(course.code), 1) : selected[year]['sem1'].push(course.code);"/> {{course.name}}<br/>
+                        </label>
+                        </div>
+                    </div>
+                    <div class="semester jumbotron">
+                        <h5><span class="badge badge-success">Semester 2</span></h5>
+                        <div class="courseList">
+                        <label ng-repeat='course in courseList[year]["sem2"]'>
+                            <input type="checkbox" checklist-model="courses_selected" checklist-value="course.code" ng-change="updateList();selected[year]['sem2'].includes(course.code) ? selected[year]['sem2'].splice(selected[year]['sem2'].indexOf(course.code), 1) : selected[year]['sem2'].push(course.code);"/> {{course.name}}<br/>
+                        </label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-10 col-lg-10">
-    <div id="curriculum" style="float:left;" class="container" >
-        <div id="major" class="jumbotron">
-            <h5><span class="badge badge-info">Possible Majors</span></h5>
-            <ul>
-                <li ng-repeat="major in possibleMajors">{{major}}</li>
-            </ul>
-        </div>
-        <div id="minor" class="jumbotron">
-            <h5><span class="badge badge-info">Possible Minors</span></h5>
-            <ul>
-            <li ng-repeat="minor in possibleMinors">{{minor}}</li>
-            </ul>
-        </div>
-    </div>
+                <div id="curriculum" style="float:left;" class="container" >
+                    <div id="major" class="jumbotron">
+                        <h5><span class="badge badge-info">Possible Majors</span></h5>
+                        <ul>
+                            <li ng-repeat="major in possibleMajors">{{major}}</li>
+                        </ul>
+                    </div>
+                    <div id="minor" class="jumbotron">
+                        <h5><span class="badge badge-info">Possible Minors</span></h5>
+                        <ul>
+                        <li ng-repeat="minor in possibleMinors">{{minor}}</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
