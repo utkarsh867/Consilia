@@ -4,7 +4,7 @@ A smart academic planner developed to solve academic planning problems at HKU.
 
 ### Screenshots
 
-<kbd><img src="/assets/course_planner.png" alt="Course Planner Screen"></kbd>
+<img src="/assets/course_planner.png" alt="Course Planner Screen">
 
 ### Proposal
 
@@ -65,7 +65,7 @@ To convince the stakeholders and understand the problem better we carried out a 
 
 #### Course
 
-[
+`[
   {
     "code": "CAES1000",
     "name": "CAES1000 Core University English",
@@ -90,4 +90,4 @@ To convince the stakeholders and understand the problem better we carried out a 
       1
     ]
   }
-]
+]`
