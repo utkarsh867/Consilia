@@ -1,2 +1,4 @@
 node_modules/
 file
+.DS_Store
+.idea
